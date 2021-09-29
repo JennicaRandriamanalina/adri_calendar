@@ -1,67 +1,105 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
   }
-  .ovf{
-    overflow-y: scroll;
-    max-height: 300px;
-  }
-  .wrapper {
-    width: 100%;
-    padding: 20px
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  scroll-behavior: smooth;
+}
 
-  .label {
-    font-size: .625rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: +1.3px;
-    margin-bottom: 1rem;
-  }
-  
-  .searchBar {
-    width: 100%;
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteneur1{
+    margin: 3rem;
+}
+
+.nav{
     display: flex;
     flex-direction: row;
-    align-items: center;
-  }
-  
-  #searchQueryInput {
-    width: 100%;
-    height: 2.8rem;
-    background: #f5f5f5;
-    outline: none;
-    border: none;
-    border-radius: 1.625rem;
-    padding: 0 3.5rem 0 1.5rem;
-    font-size: 1rem;
-  }
-  
-  #searchQuerySubmit {
-    width: 3.5rem;
-    height: 2.8rem;
-    margin-left: -3.5rem;
-    background: none;
-    border: none;
-    outline: none;
-  }
-  
-  #searchQuerySubmit:hover {
-    cursor: pointer;
-  }
+    justify-content: space-between;
+    
+}
 
-  .colonne1{
-    background-color: rgb(29, 29, 29);
-    color: white;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+.container1{
+    display:flex;
+    height: 5rem;
+    background-color: aquamarine;
+}
 
-  .colonne2{
-    background-color: #0b15a5;
-    color: white
-  }
-  .colonne3{
-    background-color: yellow
-  }
+.section1 div{
+    display: flex;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+
+.section2{
+    width: 40%;
+    text-align: center;
+}
+
+.select{
+    margin-left: 1rem;
+}
+
+.notif{
+    max-height: 6rem;
+    overflow: scroll;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+.colonne1{
+  background-color: rgb(29, 29, 29);
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.colonne2{
+  background-color: #0b15a5;
+  color: white
+}
+.colonne3{
+  background-color: yellow
+}
